@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online - The Pizza Toppings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Order Online</h1>
+  <form action="/submit-order" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    
+    <label for="pizza">Select Pizza:</label>
+    <select id="pizza" name="pizza">
+      <option value="pepperoni">Pepperoni Pizza</option>
+      <option value="veggie">Veggie Pizza</option>
+      <option value="cheese">Cheese Pizza</option>
+    </select>
+    
+    <button type="submit">Place Order</button>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 The Pizza Toppings. All rights reserved.</p>
+  </footer>
+</body>
+</html>
